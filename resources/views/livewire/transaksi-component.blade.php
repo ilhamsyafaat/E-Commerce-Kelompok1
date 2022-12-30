@@ -43,7 +43,7 @@
                     <a href="{{ route('shop.checkout') }}" class="btn "> <i class="mr-10 fi-rs-box-alt"></i>
                        Next</a>
                 </div>
-                <div class="col-md-6">
+                {{-- <div class="col-md-6">
                     <div class="order_review">
                         <div class="mb-20">
                             <h4>Your Orders</h4>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

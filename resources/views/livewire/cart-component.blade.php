@@ -82,6 +82,7 @@
                                 @else
                                     <p>No Item in Cart</p>
                                 @endif
+
                             </div>
                             <div class="cart-action text-end">
                                 <a class="mr-10 btn mb-sm-15"><i class="mr-10 fi-rs-shuffle"></i>Update Cart</a>

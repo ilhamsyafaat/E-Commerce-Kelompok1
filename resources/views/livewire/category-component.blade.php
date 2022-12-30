@@ -28,7 +28,7 @@
                                 </p>
                             </div>
                             <div class="sort-by-product-area">
-                                <div class="sort-by-cover mr-10">
+                                <div class="mr-10 sort-by-cover">
                                     <div class="sort-by-product-wrap">
                                         <div class="sort-by">
                                             <span><i class="fi-rs-apps"></i>Show:</span>
@@ -97,7 +97,7 @@
                                                         src="{{ asset('assets/imgs/products')}}/{{$product->image}}"
                                                         alt="{{ $product->name }}">
                                                     <img class="hover-img"
-                                                        src="{{ asset('assets/imgs/shop/product-') }}{{ $product->id }}-2.jpg"
+                                                        src="{{ asset('assets/imgs/products')}}/{{$product->image}}"
                                                         alt="{{ $product->name }}">
                                                 </a>
                                             </div>
@@ -172,8 +172,8 @@
                         </div>
                         <!-- Fillter By Price -->
                         <div class="sidebar-widget price_range range mb-30">
-                            <div class="widget-header position-relative mb-20 pb-10">
-                                <h5 class="widget-title mb-10">Fill by price</h5>
+                            <div class="pb-10 mb-20 widget-header position-relative">
+                                <h5 class="mb-10 widget-title">Fill by price</h5>
                                 <div class="bt-1 border-color-1"></div>
                             </div>
                             <div class="price-filter">
@@ -188,7 +188,7 @@
                                 </div>
                             </div>
                             <div class="list-group">
-                                <div class="list-group-item mb-10 mt-10">
+                                <div class="mt-10 mb-10 list-group-item">
                                     <label class="fw-900">Color</label>
                                     <div class="custome-checkbox">
                                         <input class="form-check-input" type="checkbox" name="checkbox"
@@ -225,46 +225,46 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="shop.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i>
+                            <a href="shop.html" class="btn btn-sm btn-default"><i class="mr-5 fi-rs-filter"></i>
                                 Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
-                        <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
-                            <div class="widget-header position-relative mb-20 pb-10">
-                                <h5 class="widget-title mb-10">New products</h5>
+                        <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+                            <div class="pb-10 mb-20 widget-header position-relative">
+                                <h5 class="mb-10 widget-title">New products</h5>
                                 <div class="bt-1 border-color-1"></div>
                             </div>
-                            <div class="single-post clearfix">
+                            <div class="clearfix single-post">
                                 <div class="image">
                                     <img src="{{ asset('assets/imgs/shop/thumbnail-3.jpg') }}" alt="#">
                                 </div>
-                                <div class="content pt-10">
+                                <div class="pt-10 content">
                                     <h5><a href="product-details.html">Chen Cardigan</a></h5>
-                                    <p class="price mb-0 mt-5">$99.50</p>
+                                    <p class="mt-5 mb-0 price">$99.50</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:90%"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="single-post clearfix">
+                            <div class="clearfix single-post">
                                 <div class="image">
                                     <img src="{{ asset('assets/imgs/shop/thumbnail-4.jpg') }}" alt="#">
                                 </div>
-                                <div class="content pt-10">
+                                <div class="pt-10 content">
                                     <h6><a href="product-details.html">Chen Sweater</a></h6>
-                                    <p class="price mb-0 mt-5">$89.50</p>
+                                    <p class="mt-5 mb-0 price">$89.50</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:80%"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="single-post clearfix">
+                            <div class="clearfix single-post">
                                 <div class="image">
                                     <img src="{{ asset('assets/imgs/shop/thumbnail-5.jpg') }}" alt="#">
                                 </div>
-                                <div class="content pt-10">
+                                <div class="pt-10 content">
                                     <h6><a href="product-details.html">Colorful Jacket</a></h6>
-                                    <p class="price mb-0 mt-5">$25</p>
+                                    <p class="mt-5 mb-0 price">$25</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:60%"></div>
                                     </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\AboutComponent;
 use App\Http\Livewire\Admin\AdminAddCategoryComponent;
 use App\Http\Livewire\Admin\AdminAddCustomerComponent;
 use App\Http\Livewire\Admin\AdminAddHomeSlideComponent;
@@ -16,6 +17,7 @@ use App\Http\Livewire\Admin\AdminProductComponent;
 use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\CategoryComponent;
 use App\Http\Livewire\CheckoutComponent;
+use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\DetailsComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\SearchComponent;
@@ -57,6 +59,7 @@ Route::get('/product-category/{slug}', CategoryComponent::class)->name('product.
 Route::get('/search', SearchComponent::class)->name('product.search');
 
 Route::get('/thank-you', ThankyouComponent::class)->name('thankyou');
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

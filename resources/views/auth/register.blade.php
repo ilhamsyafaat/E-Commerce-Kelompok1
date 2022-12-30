@@ -113,7 +113,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 mt-100" >
                                 <img src="assets/imgs/login.png">
                             </div>
                         </div>

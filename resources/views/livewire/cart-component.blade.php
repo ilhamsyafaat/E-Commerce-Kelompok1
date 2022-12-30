@@ -424,7 +424,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <a href="#" wire:click.prevent="checkout" class="btn "> <i class="mr-10 fi-rs-box-alt"></i>
+                                            <a href="{{ route('shop.checkout') }}" wire:click.prevent="checkout" class="btn "> <i class="mr-10 fi-rs-box-alt"></i>
                                                 Proceed To CheckOut</a>
                                         </div>
                                     </div>

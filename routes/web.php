@@ -60,7 +60,8 @@ Route::get('/search', SearchComponent::class)->name('product.search');
 
 Route::get('/thank-you', ThankyouComponent::class)->name('thankyou');
 
-
+Route::get('/about', AboutComponent::class)->name('about');
+Route::get('/contact', ContactComponent::class)->name('contact');
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');

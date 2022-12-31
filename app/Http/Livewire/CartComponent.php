@@ -4,7 +4,6 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use Cart;
-use Illuminate\Support\Facades\Auth;
 
 class CartComponent extends Component
 {
@@ -35,15 +34,6 @@ class CartComponent extends Component
     {
         Cart::instance('cart')->destroy();
         $this->emitTo('cart-icon-component', 'refreshComponent');
-    }
-
-    public function checkout()
-    {
-        if (!Auth::check()) {
-            return redirect()->route('shop.checkout');
-        } else {
-            return redirect()->route('login');
-        }
     }
     public function render()
     {

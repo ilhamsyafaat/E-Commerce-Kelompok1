@@ -3,7 +3,6 @@
         nav svg {
             height: 20px;
         }
-
         nav .hidden {
             display: block;
         }
@@ -104,7 +103,6 @@
             @this.set('product_id',id);
             $('#deleteConfirmation').modal('show');
         }
-
         function deleteProduct(){
             @this.call('deleteProduct');
             $('#deleteConfirmation').modal('hide');

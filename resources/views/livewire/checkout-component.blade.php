@@ -3,7 +3,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>
+                    <a href="index.html" rel="nofollow">Home</a>
                     <span></span> Shop
                     <span></span> Checkout
                 </div>
@@ -157,7 +157,7 @@
                             <div class="payment_method">
                                 <div class="mb-10">
                                     <h4>Pembayaran</h4>
-                                        <img class="mr-3" src="{{ url('assets/imgs/bri.png')}}" alt="Bank BRI" width="120">
+                                        <img class="mr-3" src="{{ url('assets/imgs/bri.png')}}" alt="Bank BRI" width="50">
                                         <div class="media-body">
                                         <h5 class="mt-0">BANK BRI</h5>  No. Rekening 012345-678-910 atas nama <strong> Pihak WO</strong>
                                         </div>

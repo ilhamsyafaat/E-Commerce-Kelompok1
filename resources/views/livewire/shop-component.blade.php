@@ -3,16 +3,13 @@
         nav svg {
             height: 20px;
         }
-
         nav .hidden {
             display: block;
         }
-
         .wishlisted {
             background-color: #F15412 !important;
             border: 1px solid transparent !important;
         }
-
         .wishlisted i {
             color: #fff !important;
         }
@@ -322,7 +319,6 @@
                     @this.set('max_value', ui.values[1]);
                 }
             });
-
         });
     </script>
 @endpush

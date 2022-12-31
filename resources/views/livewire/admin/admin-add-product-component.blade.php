@@ -3,7 +3,6 @@
         nav svg {
             height: 20px;
         }
-
         nav .hidden {
             display: block;
         }

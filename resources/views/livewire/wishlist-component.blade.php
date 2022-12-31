@@ -3,20 +3,16 @@
         nav svg {
             height: 20px;
         }
-
         nav .hidden {
             display: block;
         }
-
         .wishlisted {
             background-color: #F15412 !important;
             border: 1px solid transparent !important;
         }
-
         .wishlisted i {
             color: #fff !important;
         }
-
         .product-cart-wrap .product-action-1 button:after,
         .product-cart-wrap .product-action-1 a.action-btn:after {
             left: -32%;

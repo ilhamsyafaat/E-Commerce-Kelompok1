@@ -104,7 +104,7 @@
                     <div class="col-md-6">
                         <div class="order_review">
                             <div class="mb-20">
-                                <h4>Your Orders</h4>
+                                <h4>Your Order</h4>
                             </div>
                             <div class="table-responsive order_table text-center">
                                 <table class="table">

@@ -358,7 +358,6 @@
                                         <li><a class="active" href="/">Home </a></li>
                                         <li><a href="{{ route('about') }}">About</a></li>
                                         <li><a href="{{ route('shop') }}">Shop</a></li>
-                                        <li><a href="blog.html">Blog </a></li>
                                         <li><a href="{{ route('contact') }}">Contact</a></li>
                                         @auth
                                             <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>

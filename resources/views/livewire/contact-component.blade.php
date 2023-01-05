@@ -2,7 +2,11 @@
     <div class="page-header breadcrumb-wrap">
         <div class="container">
             <div class="breadcrumb">
+<<<<<<< HEAD
                 <a href="index.html" rel="nofollow">Home</a>                    
+=======
+                <a href="/" rel="nofollow">Home</a>                    
+>>>>>>> origin/master
                 <span></span> Contact us
             </div>
         </div>

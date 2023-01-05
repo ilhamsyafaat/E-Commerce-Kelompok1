@@ -12,7 +12,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>
+                    <a href="/" rel="nofollow">Home</a>
                     <span></span> Shop
                 </div>
             </div>
@@ -170,7 +170,7 @@
                                 @endforeach
                             </ul>
                         </div>
-                        <!-- Fillter By Price -->
+                       <!-- Fillter By Price -->
                         <div class="sidebar-widget price_range range mb-30">
                             <div class="pb-10 mb-20 widget-header position-relative">
                                 <h5 class="mb-10 widget-title">Fill by price</h5>
@@ -178,11 +178,11 @@
                             </div>
                             <div class="price-filter">
                                 <div class="price-filter-inner">
-                                    <div id="slider-range"></div>
+                                    <div id="slider-range" wire:ignore></div>
                                     <div class="price_slider_amount">
                                         <div class="label-input">
-                                            <span>Range:</span><input type="text" id="amount" name="price"
-                                                placeholder="Add Your Price">
+                                            <span>Range:</span> <span class="text-info">${{ $min_value }}</span> -
+                                            <span class="text-info">${{ $max_value }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -229,30 +229,53 @@
                                 Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
+<<<<<<< HEAD
                         <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+=======
+                        {{-- <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+>>>>>>> origin/master
                             <div class="pb-10 mb-20 widget-header position-relative">
                                 <h5 class="mb-10 widget-title">New products</h5>
                                 <div class="bt-1 border-color-1"></div>
                             </div>
                             <div class="clearfix single-post">
+<<<<<<< HEAD
+=======
+                               @foreach ($products as $product)
+>>>>>>> origin/master
                                 <div class="image">
-                                    <img src="{{ asset('assets/imgs/shop/thumbnail-3.jpg') }}" alt="#">
+                                    <img src="{{ asset('assets/imgs/products')}}/{{$product->image}}" alt="{{ $product->name }}">
                                 </div>
                                 <div class="pt-10 content">
+<<<<<<< HEAD
                                     <h5><a href="product-details.html">Chen Cardigan</a></h5>
                                     <p class="mt-5 mb-0 price">$99.50</p>
+=======
+                                    <h5><a href="product-details.html">{{ $product->name }}</a></h5>
+                                    <p class="mt-5 mb-0 price">${{ $product->regular_price }}</p>
+>>>>>>> origin/master
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:90%"></div>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                             </div>
+=======
+                                @endforeach --}}
+                            {{-- </div>
+>>>>>>> origin/master
                             <div class="clearfix single-post">
                                 <div class="image">
-                                    <img src="{{ asset('assets/imgs/shop/thumbnail-4.jpg') }}" alt="#">
+                                    <img src="{{ asset('assets/imgs/products')}}/{{$product->image}}" alt="{{ $product->name }}">
                                 </div>
                                 <div class="pt-10 content">
+<<<<<<< HEAD
                                     <h6><a href="product-details.html">Chen Sweater</a></h6>
                                     <p class="mt-5 mb-0 price">$89.50</p>
+=======
+                                    <h6><a href="product-details.html">{{ $product->name }}</a></h6>
+                                    <p class="mt-5 mb-0 price">${{ $product->regular_price }}</p>
+>>>>>>> origin/master
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:80%"></div>
                                     </div>
@@ -260,23 +283,28 @@
                             </div>
                             <div class="clearfix single-post">
                                 <div class="image">
-                                    <img src="{{ asset('assets/imgs/shop/thumbnail-5.jpg') }}" alt="#">
+                                    <img src="{{ asset('assets/imgs/products')}}/{{$product->image}}" alt="{{ $product->name }}">
                                 </div>
                                 <div class="pt-10 content">
+<<<<<<< HEAD
                                     <h6><a href="product-details.html">Colorful Jacket</a></h6>
                                     <p class="mt-5 mb-0 price">$25</p>
+=======
+                                    <h6><a href="product-details.html">{{ $product->name }}</a></h6>
+                                    <p class="mt-5 mb-0 price">${{ $product->regular_price }}</p>
+>>>>>>> origin/master
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:60%"></div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="banner-img wow fadeIn mb-45 animated d-lg-block d-none">
                             <img src="{{ asset('assets/imgs/banner/banner-11.jpg') }}" alt="">
                             <div class="banner-text">
                                 <span>Women Zone</span>
                                 <h4>Save 17% on <br>Office Dress</h4>
-                                <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                                <a href="{{ route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

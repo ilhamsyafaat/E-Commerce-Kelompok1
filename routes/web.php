@@ -2,13 +2,16 @@
 
 use App\Http\Livewire\AboutComponent;
 use App\Http\Livewire\Admin\AdminAddCategoryComponent;
+use App\Http\Livewire\Admin\AdminAddCheckoutComponent;
 use App\Http\Livewire\Admin\AdminAddCustomerComponent;
 use App\Http\Livewire\Admin\AdminAddHomeSlideComponent;
 use App\Http\Livewire\Admin\AdminAddProductComponent;
 use App\Http\Livewire\Admin\AdminCategoriesComponent;
+use App\Http\Livewire\Admin\AdminCheckoutComponent;
 use App\Http\Livewire\Admin\AdminCustomerComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminEditCategoryComponent;
+use App\Http\Livewire\Admin\AdminEditCheckoutComponent;
 use App\Http\Livewire\Admin\AdminEditCustomerComponent;
 use App\Http\Livewire\Admin\AdminEditHomeSlideComponent;
 use App\Http\Livewire\Admin\AdminEditProductComponent;
@@ -22,7 +25,11 @@ use App\Http\Livewire\DetailsComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\SearchComponent;
 use App\Http\Livewire\ShopComponent;
+<<<<<<< HEAD
 use App\Http\Livewire\TransaksiComponent;
+=======
+use App\Http\Livewire\ThankyouComponent;
+>>>>>>> origin/master
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\WishlistComponent;
 use Illuminate\Support\Facades\Route;
@@ -58,16 +65,24 @@ Route::get('/product-category/{slug}', CategoryComponent::class)->name('product.
 
 Route::get('/search', SearchComponent::class)->name('product.search');
 
+<<<<<<< HEAD
+=======
+Route::get('/thank-you', ThankyouComponent::class)->name('thankyou');
+
+>>>>>>> origin/master
 Route::get('/about', AboutComponent::class)->name('about');
 
 Route::get('/contact', ContactComponent::class)->name('contact');
 
+<<<<<<< HEAD
 Route::get('/transaksi', TransaksiComponent::class)->name('tf');
 
 
 
 
 
+=======
+>>>>>>> origin/master
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
@@ -90,6 +105,9 @@ Route::middleware(['auth', 'authadmin'])->group(function () {
     Route::get('/admin/customers', AdminCustomerComponent::class)->name('admin.customers');
     Route::get('/admin/customer/add', AdminAddCustomerComponent::class)->name('admin.customer.add');
     Route::get('/admin/customer/edit/{user_id}', AdminEditCustomerComponent::class)->name('admin.customer.edit');
+    Route::get('/admin/checkouts', AdminCheckoutComponent::class)->name('admin.checkouts');
+    Route::get('/admin/checkout/add', AdminAddCheckoutComponent::class)->name('admin.checkout.add');
+    Route::get('/admin/checkout/edit/{checkout_id}', AdminEditCheckoutComponent::class)->name('admin.checkout.edit');
 });
 
 

@@ -3,7 +3,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>
+                    <a href="/" rel="nofollow">Home</a>
                     <span></span> Fashion
                     <span></span> Abstract Print Patchwork Dress
                 </div>
@@ -22,7 +22,7 @@
                                         <div class="product-image-slider">
                                             <figure class="border-radius-10">
                                                 <img src="{{ asset('assets/imgs/products')}}/{{$product->image}}"
-                                                    alt="product image">
+                                                    alt="{{$product->image}}">
                                             </figure>
                                             <figure class="border-radius-10">
                                                 <img src="{{ asset('assets/imgs/shop/product-16-1.jpg') }}"
@@ -50,9 +50,9 @@
                                             </figure>
                                         </div>
                                         <!-- THUMBNAILS -->
-                                        <div class="slider-nav-thumbnails pl-15 pr-15">
-                                            <div><img src="{{ asset('assets/imgs/shop/thumbnail-3.jpg') }}"
-                                                    alt="product image"></div>
+                                        {{-- <div class="slider-nav-thumbnails pl-15 pr-15">
+                                            <div><img src="{{ asset('assets/imgs/products')}}/{{$product->image}}"
+                                                    alt="{{$product->image}}"></div>
                                             <div><img src="{{ asset('assets/imgs/shop/thumbnail-4.jpg') }}"
                                                     alt="product image"></div>
                                             <div><img src="{{ asset('assets/imgs/shop/thumbnail-5.jpg') }}"
@@ -65,7 +65,7 @@
                                                     alt="product image"></div>
                                             <div><img src="{{ asset('assets/imgs/shop/thumbnail-9.jpg') }}"
                                                     alt="product image"></div>
-                                        </div>
+                                        {{-- </div> --}}
                                     </div>
                                     <!-- End Gallery -->
                                     <div class="social-icons single-share">

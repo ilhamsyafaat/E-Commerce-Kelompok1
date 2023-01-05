@@ -15,6 +15,9 @@ class CategoryComponent extends Component
     public $orderBy = "Default Sorting";
     public $slug;
 
+    public $min_value = 0;
+    public $max_value = 1000;
+
     public function store($product_id, $product_name, $product_price)
     {
         Cart::add($product_id, $product_name, 1, $product_price)->associate('\App\Models\Product');
@@ -42,13 +45,13 @@ class CategoryComponent extends Component
         $category_id = $category->id;
         $category_name = $category->name;
         if ($this->orderBy == 'Price: Low to High') {
-            $products = Product::where('category_id', $category_id)->orderBy('regular_price', 'ASC')->paginate($this->pageSize);
+            $products = Product::where('category_id', $category_id,[$this->min_value, $this->max_value])->orderBy('regular_price', 'ASC')->paginate($this->pageSize);
         } else if ($this->orderBy == 'Price: High to Low') {
-            $products = Product::where('category_id', $category_id)->orderBy('regular_price', 'DESC')->paginate($this->pageSize);
+            $products = Product::where('category_id', $category_id,[$this->min_value, $this->max_value])->orderBy('regular_price', 'DESC')->paginate($this->pageSize);
         } else if ($this->orderBy == 'Sort By Newness') {
-            $products = Product::where('category_id', $category_id)->orderBy('created_at', 'DESC')->paginate($this->pageSize);
+            $products = Product::where('category_id', $category_id,[$this->min_value, $this->max_value])->orderBy('created_at', 'DESC')->paginate($this->pageSize);
         } else {
-            $products = Product::where('category_id', $category_id)->paginate($this->pageSize);
+            $products = Product::where('category_id', $category_id,[$this->min_value, $this->max_value])->paginate($this->pageSize);
         }
         $categories = Category::orderBy('name', 'ASC')->get();
         return view('livewire.category-component', ['products' => $products, 'categories' => $categories, 'category_name' => $category_name]);

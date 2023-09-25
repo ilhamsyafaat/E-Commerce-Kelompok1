@@ -2,7 +2,12 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Checkout;
+use App\Models\Product;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class CheckoutComponent extends Component
 {
